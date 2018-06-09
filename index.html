@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Trabalho de Desenvolvimento Web com jQuery - Felipe Mantovani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="plugins/fotorama-4.6.4/fotorama.css">
+  <link rel="stylesheet" href="plugins/lightbox2-master/src/css/lightbox.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="image"fav/>
+  <link rel="apple-touch-icon" sizes="60x60" href="image/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="image/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="image/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="image/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="image/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="image/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="image/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="image/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="image/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="image/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/fav/favicon-16x16.png">
+  <link rel="manifest" href="image/fav/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="image/fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <button id="menu" class="button"><i class="fas fa-bars"></i></button>
+        <a id="logo" href="index.html" title="Fresh Cart">
+          <img src="image/logotipo.png" alt="Fresh Cart">
+        </a>
+        <ul>
+          <li>
+            <a href="index.html" title="Home">Home</a>
+          </li>
+          <li>
+            <a class="one-page" href="#quem-somos" title="Quem Somos">Quem Somos</a>
+          </li>
+          <li class="sub">
+            <a href="#" title="Produtos">Produtos<i class="fas fa-arrow-down"></i></a>
+            <ul class="ul-sub">
+              <li>
+                <a href="#" title="Perecíveis">Perecíveis</a>
+              </li>
+              <li>
+                <a href="#" title="Não-perecíveis">Não-perecíveis</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="one-page" href="#fotos" title="Fotos">Fotos</a>
+          </li>
+          <li>
+            <a class="one-page" href="#contato" title="Contato">Contato</a>
+          </li>
+        </ul> <!-- ul -->
+      </nav> <!-- nav -->
+      <div class="clearfix"></div>
+    </div> <!-- contaier -->
+  </header> <!-- header -->
+
+  <main>
+    <div class="fotorama" data-loop="true" data-autoplay="true">
+      <img src="image/b1.jpg" alt="Frutas">
+      <img src="image/b2.jpg" alt="Frutas">
+      <img src="image/b3.jpg" alt="Frutas">
+    </div> <!-- banners -->
+    <div class="container">
+      <div class="quem-somos">
+        <h1 id="quem-somos">Quem Somos</h1>
+        <div class="box">
+          <i class="fas fa-info-circle"></i>
+          <p>Textos sendo gerados via plugin jQuery, pega a letra e gera a palavra.</p>
+        </div>
+        <ul class="gerar">
+          <h5>Letras</h5>
+          <li>e</li>
+          <li>i</li>
+          <li>o</li>
+          <li>u</li>
+          <li>a</li>
+        </ul>
+        <ul id="gerados">
+          <h5>Textos gerados</h5>
+        </ul>
+      </div>
+      <div class="galeria-de-fotos">
+        <h1 id="fotos">Galeria de Fotos</h1>
+        <div class="box">
+          <i class="fas fa-info-circle"></i>
+          <p>As legendas das imagens estão sendo adicionadas via plugin jQuery pegando o texto do atributo ALT das IMG's.</p>
+        </div>
+        <ul>
+          <li>
+            <a class="demo" href="image/galeria/01g.jpg" data-lightbox="gallery">
+              <i class="fas fa-search-plus"></i>
+              <img class="example-image gera-legenda" src="image/galeria/01p.jpg" alt="Melão">
+              <p class="legenda"></p>
+            </a>
+          </li>
+          <li>
+            <a class="demo" href="image/galeria/02g.jpg" data-lightbox="gallery">
+              <i class="fas fa-search-plus"></i>
+              <img class="example-image gera-legenda" src="image/galeria/02p.jpg" alt="Laranja">
+              <p class="legenda"></p>
+            </a>
+          </li>
+          <li>
+            <a class="demo" href="image/galeria/03g.jpg" data-lightbox="gallery">
+              <i class="fas fa-search-plus"></i>
+              <img class="example-image gera-legenda" src="image/galeria/03p.jpg" alt="Kiwi">
+              <p class="legenda"></p>
+            </a>
+          </li>
+          <li>
+            <a class="demo" href="image/galeria/04g.jpg" data-lightbox="gallery">
+              <i class="fas fa-search-plus"></i>
+              <img class="example-image gera-legenda" src="image/galeria/04p.jpg" alt="Morango">
+              <p class="legenda"></p>
+            </a>
+          </li>
+        </ul>
+      </div> <!-- galeria de fotos -->
+      <div id="formulario">
+        <h1 id="contato">Contato</h1>
+        <div class="box">
+          <i class="fas fa-info-circle"></i>
+          <p>Todos os campos devem ser preenchidos.<br>Estados e cidades puxando de arquivo "estados-cidades.json".</p>
+        </div>
+        <form method="POST">
+          <input id="nome" type="text" name="nome" placeholder="Seu nome">
+          <input id="email" type="text" name="email" placeholder="Seu e-mail">
+          <input id="telefone" type="tel" name="telefone" placeholder="Seu telefone/celular">
+          <input type="text" id="datepicker" class="datanascimento" name="datanascimento" placeholder="Sua data de nascimento">
+          <select id="estado">
+          </select>
+          <select id="cidade">
+          </select>
+          <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+          <button class="btn" type="submit" title="Enviar">Enviar</button>
+        </form>
+      </div> <!-- formulario contato -->
+    </div> <!-- container -->
+  </main>
+
+  <footer>
+    <strong>Trabalho de Desenvolvimento Web com jQuery</strong>
+    <p>Felipe Mantovani</p>
+  </footer>
+
+  <button id="voltar-ao-topo" class="button"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="plugins/fotorama-4.6.4/fotorama.js"></script>
+  <script src="plugins/lightbox2-master/src/js/lightbox.js"></script>
+  <script src="plugins/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
